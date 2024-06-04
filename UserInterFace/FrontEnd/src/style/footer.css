@@ -1,0 +1,17 @@
+footer {
+  padding: 50px -50px 20px;
+}
+.footerbg {
+  background-color: #000000;
+}
+.footer a {
+  color: #716c6c;
+}
+.footer-brand:hover {
+  color: #d6d2d2;
+  text-decoration: none;
+}
+.social-icons-footer :hover {
+  color: #d6d2d2;
+  text-decoration: none;
+}

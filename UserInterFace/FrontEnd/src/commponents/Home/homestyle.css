@@ -1,0 +1,98 @@
+/* Base styles */
+.sibling-fade {
+  visibility: hidden;
+}
+.sibling-fade > * {
+  visibility: visible;
+}
+.sibling-fade > * {
+  transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms;
+}
+.sibling-fade:hover > * {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+.sibling-fade > *:hover {
+  opacity: 1;
+  transform: scale(0.9);
+  transition-delay: 0ms, 0ms;
+}
+
+/* Specific card hover effects */
+.card {
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  background-color: #c2bbbe;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .col-md-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+h2.text-center.my-4 {
+  font-size: 2.5rem;
+  color: #333;
+  animation: bigshot 1s ease-in-out;
+}
+@keyframes bigshot {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

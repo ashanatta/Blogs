@@ -1,0 +1,19 @@
+.img-genre {
+  width: 40px;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+#sidebar {
+  width: 250px;
+  height: 650px;
+  padding: 10px;
+  background-color: rgb(216, 222, 222);
+}
+
+#sidebar ul li {
+  list-style-type: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 8px;
+  margin-top: 30px;
+}
